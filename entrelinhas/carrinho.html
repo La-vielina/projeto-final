@@ -1,31 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrinho</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrelinhas – Carrinho</title>
 
-    <link rel="stylesheet" href="carrinho.css">
-
+  <link rel="stylesheet" href="carrinho.css" />
 </head>
 <body>
-    <nav>
-        <a href="#" class="logo">Entrelinhas</a>
-        <ul class="nav-link">
-            <li><a href="inicio"></a>Início</li>
-            <li> <a href="promocoes"></a>Promoções</li>
-            <li><a href="sobre-nos"></a>Sobre Nós</li>
-        </ul>
 
-       <div class="nav-direita">
-         <div class="barra-pesquisa">
-            <input type="text" placeholder="buscar">
-            <button></button>
+  <!-- NAVBAR -->
+  <nav>
+    <a href="entrelinhas-principal.html" class="nav-logo">Entrelinhas</a>
+    <ul class="nav-links">
+      <li><a href="entrelinhas-principal.html">início</a></li>
+      <li><a href="#">promoções</a></li>
+      <li><a href="#">sobre</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="search-wrapper">
+        <input type="text" placeholder="buscar" />
+        <button>🔍</button>
+      </div>
+      <a class="nav-icon" href="entrelinhas-carrinho.html">🛒</a>
+      <a class="nav-icon" href="entrelinhas-login.html">👤</a>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- TABELA DO CARRINHO -->
+    <div>
+      <div class="cart-panel">
+
+        <!-- Cabeçalho -->
+        <div class="cart-header">
+          <span>Produtos</span>
+          <span>preço</span>
+          <span>quantidade</span>
+          <span>total</span>
         </div>
 
-        <a class="nav-icon" href="carrinho.html"></a>
-       </div>
-    </nav>
-    
+        <!-- Item 1 -->
+        <div class="cart-item">
+          <div class="item-info">
+            <div class="book-thumb book-vento">O Morro dos<br>Ventos<br>Uivantes</div>
+            <span class="item-name">O Morro dos<br>Ventos Uivantes</span>
+          </div>
+          <span class="item-price">R$ 44,00</span>
+          <div class="qty-stepper">
+            <button class="qty-btn">−</button>
+            <span class="qty-value">1</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <span class="item-total">R$ 44,00</span>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="cart-item">
+          <div class="item-info">
+            <div class="book-thumb book-verity">Verity</div>
+            <span class="item-name">Verity</span>
+          </div>
+          <span class="item-price">R$ 54,00</span>
+          <div class="qty-stepper">
+            <button class="qty-btn">−</button>
+            <span class="qty-value">2</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <span class="item-total">R$ 108,00</span>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="cart-item">
+          <div class="item-info">
+            <div class="book-thumb book-potter">HARRY<br>POTTER</div>
+            <span class="item-name">Harry Potter<br>e a Pedra Filosofal</span>
+          </div>
+          <span class="item-price">R$ 59,00</span>
+          <div class="qty-stepper">
+            <button class="qty-btn">−</button>
+            <span class="qty-value">1</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <span class="item-total">R$ 59,00</span>
+        </div>
+
+      </div>
+
+      <!-- Rodapé da tabela -->
+      <div class="cart-footer">
+        <button class="btn-esvaziar">esvaziar carrinho</button>
+      </div>
+    </div>
+
+    <!-- RESUMO -->
+    <div class="summary-panel">
+      <div class="summary-title">Resumo total</div>
+
+      <div class="summary-row">
+        <span>subtotal:</span>
+        <span>R$ 211,00</span>
+      </div>
+      <div class="summary-row">
+        <span>frete:</span>
+        <span>grátis</span>
+      </div>
+      <div class="summary-row">
+        <span>opções de pagamento:</span>
+        <span>pix</span>
+      </div>
+
+      <hr class="summary-divider" />
+
+      <div class="summary-total">
+        <span>total :</span>
+        <span>R$ 211,00</span>
+      </div>
+
+      <button class="btn-finalizar">finalizar compra</button>
+    </div>
+
+  </div>
+
 </body>
 </html>
