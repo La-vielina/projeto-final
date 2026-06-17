@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrinho</title>
+
+  <link rel="stylesheet" href="carrinho.css" />
+</head>
+<body>
+
+  <nav>
+    <img src="logo2.png" alt="entrelinhas" class="logo">
+
+    <ul class="nav-abas">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="promocoes.html">Promoções</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
+    </ul>
+
+    <div class="nav-direita">
+      <div class="barra-pesquisa">
+        <input type="text" placeholder="buscar" />
+        <img src="lupa.png" alt="buscar" class="lupa">
+      </div>
+
+      <a class="nav-icone" href="carrinho.html">
+        <img src="carrinho.png" alt="carrinho" class="carrinho">
+      </a>
+
+    </div>
+  </nav>
+
+  <div class="main">
+
+    <div>
+      <div class="tabela">
+
+        <div class="tabela-header">
+          <span>Produtos</span>
+          <span>Preço</span>
+          <span>Quantidade</span>
+          <span>Total</span>
+        </div>
+
+        <div class="tabela-item">
+          <div class="item-info">
+            <div class="morro-ventos">O Morro dos<br>Ventos<br>Uivantes</div>
+            <span class="livro-nome">O Morro dos<br>Ventos Uivantes</span>
+          </div>
+          <span class="preco">R$ 44,00</span>
+          <div class="qty-stepper">
+            <button class="qty-btn">−</button>
+            <span class="qty-value">1</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <span class="total">R$ 44,00</span>
+        </div>
+
+        <div class="tabela-item">
+          <div class="item-info">
+            <div class="verity">Verity</div>
+            <span class="livro-nome">Verity</span>
+          </div>
+          <span class="preco">R$ 54,00</span>
+          <div class="qty-stepper">
+            <button class="qty-btn">−</button>
+            <span class="qty-value">2</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <span class="total">R$ 108,00</span>
+        </div>
+
+        <div class="tabela-item">
+          <div class="item-info">
+            <div class="harry-potter">Harry<br>Potter</div>
+            <span class="livro-nome">Harry Potter<br>e a Pedra Filosofal</span>
+          </div>
+          <span class="preco">R$ 59,00</span>
+          <div class="qty-stepper">
+            <button class="qty-btn">−</button>
+            <span class="qty-value">1</span>
+            <button class="qty-btn">+</button>
+          </div>
+          <span class="total">R$ 59,00</span>
+        </div>
+
+      </div>
+
+      <div class="tabela-rodape">
+        <button class="btn-esvaziar">Esvaziar carrinho</button>
+      </div>
+    </div>
+
+    <div class="resumo">
+      <div class="resumo-titulo">Resumo total</div>
+
+      <div class="resumo-row">
+        <span>Subtotal:</span>
+        <span>R$ 211,00</span>
+      </div>
+      <div class="resumo-row">
+        <span>Frete:</span>
+        <span>Grátis</span>
+      </div>
+      <div class="sresumo-row">
+        <span>Opções de pagamento:</span>
+        <span>Pix</span>
+      </div>
+
+      <hr class="resumo-divider" />
+
+      <div class="resumo-total">
+        <span>Total:</span>
+        <span>R$ 211,00</span>
+      </div>
+
+      <button class="finalizar">Finalizar compra</button>
+    </div>
+
+  </div>
+
+</body>
+</html>

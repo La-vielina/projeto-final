@@ -1,0 +1,10 @@
+@import url('entrelinhas-genero-base.css');
+
+.genre-header { color: #1A3A1A; }
+
+.book-biologia  { background: linear-gradient(160deg, #2a5a2a, #5a9a5a); color: #e0f0e0; }
+.book-fisica    { background: linear-gradient(160deg, #1a3a6a, #2d5a9f); color: #c8d8f8; }
+.book-quimica   { background: linear-gradient(160deg, #6a3a1a, #a06030); color: #f0e0c8; }
+.book-historia  { background: linear-gradient(160deg, #5a4a1a, #9a8030); color: #f0eac8; }
+.book-mat       { background: linear-gradient(160deg, #4a1a3a, #8a3060); color: #f0c8e0; }
+.book-gramatica { background: linear-gradient(160deg, #1a4a4a, #2a8080); color: #c8f0f0; }

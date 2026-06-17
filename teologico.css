@@ -1,0 +1,10 @@
+@import url('entrelinhas-genero-base.css');
+
+.genre-header { color: #3A2A0A; }
+
+.book-biblia   { background: linear-gradient(160deg, #1a1a1a, #3a2a0a); color: #c8b880; }
+.book-lewis    { background: linear-gradient(160deg, #c8b8a2, #8a7060); color: #2a1a0a; }
+.book-peregrino { background: linear-gradient(160deg, #4a3a1a, #8a7030); color: #f0e8c0; }
+.book-uma-vida { background: linear-gradient(160deg, #2a4a2a, #4a8a4a); color: #e0f0d8; }
+.book-teologia { background: linear-gradient(160deg, #3a2a4a, #6a5a8a); color: #e0d8f0; }
+.book-deus    { background: linear-gradient(160deg, #c8a870, #8a6830); color: #3a2a0a; }

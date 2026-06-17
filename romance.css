@@ -1,0 +1,11 @@
+@import url('entrelinhas-genero-base.css');
+
+.genre-header { color: #7A1A2E; }
+
+.book-hoover   { background: linear-gradient(160deg, #d4b8d4, #8a5a8a); color: #fff; }
+.book-culpa    { background: linear-gradient(160deg, #1a1a2e, #2d2d5a); color: #e8d8f0; }
+.book-casimiro { background: linear-gradient(160deg, #d4b483, #a07840); color: #3B1A0D; }
+.book-cometas  { background: linear-gradient(160deg, #c8d4e8, #6a8ab4); color: #1a2a3a; }
+.book-antes    { background: linear-gradient(160deg, #e8c8b8, #c4826a); color: #3B1A0D; }
+.book-morro    { background: linear-gradient(160deg, #1a3a5c, #2d6a9f); color: #d4e8ff; }
+.book-orgulho  { background: linear-gradient(160deg, #c8b89a, #8a7050); color: #2a1a0a; }

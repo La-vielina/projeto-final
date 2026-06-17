@@ -1,0 +1,10 @@
+@import url('entrelinhas-genero-base.css');
+
+.genre-header { color: #1A0A0A; }
+
+.book-it        { background: linear-gradient(160deg, #0d0d0d, #2a0000); color: #cc0000; }
+.book-dracula   { background: linear-gradient(160deg, #1a0000, #3a0a0a); color: #c8a090; }
+.book-shining   { background: linear-gradient(160deg, #1a1a3a, #3a3a6a); color: #e0d8f0; }
+.book-cronicas  { background: linear-gradient(160deg, #5a8a3a, #8aad5a); color: #f5f0e0; }
+.book-converter { background: linear-gradient(160deg, #2a1a0a, #5a3010); color: #e8c890; }
+.book-potter2   { background: linear-gradient(160deg, #7a2912, #c4180c); color: #f5d700; }
