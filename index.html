@@ -4,136 +4,121 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Principal</title>
-
   <link rel="stylesheet" href="index.css">
  
 </head>
 <body>
-
-  <!-- NAVBAR -->
+  
   <nav>
-    <a href="#" class="logo">Entrelinhas</a>
-    <ul class="nav-links">
-      <li><a href="#">início</a></li>
-      <li><a href="#">promoções</a></li>
-      <li><a href="#">sobre</a></li>
+   <img src="logo2.png" alt="Logo" class="logo" />
+
+    <ul class="nav-abas">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="promocoes.html">Promoções</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
     </ul>
-    <div class="nav-right">
-      <div class="search-wrapper">
+
+   <div class="nav-direita">
+      <div class="barra-pesquisa">
         <input type="text" placeholder="buscar" />
-        <button>🔍</button>
+        <img src="lupa.png" alt="buscar" class="lupa">
       </div>
-      <a class="nav-icon" href="#">🛒</a>
-      <a class="nav-icon" href="entrelinhas-login.html">👤</a>
-    </div>
   </nav>
 
-  <!-- HERO -->
   <div class="hero">
     <h2>Boas histórias<br>te esperam aqui.</h2>
-    <p>Descubra novos mundos, villões e<br>heróis.</p>
+    <p>Descubra novos mundos, vilões e<br>heróis.</p>
   </div>
 
-  <!-- GENRES -->
   <div class="section" style="margin-top: 24px;">
-    <div class="genres-grid">
+    <div class="generos-grid">
 
-      <a class="genre-item" href="#">
-        <div class="genre-card genre-romance">
-          <span class="genre-icon">📖</span>
-          <span class="genre-title">Romance</span>
+      <a class="genero-livros" href="romance.html">
+        <div class="romance">
+          <img src="romance.png">
         </div>
-        <span class="genre-label">romance</span>
+        <span class="genero-nome">romance</span>
       </a>
 
-      <a class="genre-item" href="#">
-        <div class="genre-card genre-estudos">
-          <span class="genre-icon">🎓</span>
-          <span class="genre-title">Estudos</span>
+      <a class="genero-livros" href="estudos.html">
+        <div class="estudos">
+          <img src="estudos.png">
         </div>
-        <span class="genre-label">estudos</span>
+        <span class="genero-nome">estudos</span>
       </a>
 
-      <a class="genre-item" href="#">
-        <div class="genre-card genre-teologico">
-          <span class="genre-icon">⛪</span>
-          <span class="genre-title">Teológico</span>
+      <a class="genero-livros" href="teologico.html">
+        <div class="teologico">
+          <img src="teologico.png">
         </div>
-        <span class="genre-label">teológico</span>
+        <span class="genero-nome">teológico</span>
       </a>
 
-      <a class="genre-item" href="#">
-        <div class="genre-card genre-fantasia">
-          <span class="genre-icon">🧙</span>
-          <span class="genre-title">Fantasia</span>
+      <a class="genero-livros" href="fantasia.html">
+        <div class="fantasia">
+          <img src="fantasia.png">
         </div>
-        <span class="genre-label">fantasia</span>
+        <span class="genero-nome">fantasia</span>
       </a>
 
-      <a class="genre-item" href="#">
-        <div class="genre-card genre-suspense">
-          <span class="genre-icon">🔍</span>
-          <span class="genre-title">Suspense</span>
+      <a class="genero-livros" href="suspense.html">
+        <div class="suspense">
+          <img src="suspense.png">
         </div>
-        <span class="genre-label">suspense</span>
+        <span class="genero-nome">suspense</span>
       </a>
 
-      <a class="genre-item" href="#">
-        <div class="genre-card genre-terror">
-          <span class="genre-icon">📕</span>
-          <span class="genre-title">Terror</span>
+      <a class="genero-livros" href="terror.html">
+        <div class="terror">
+          <img src="terror.png">
         </div>
-        <span class="genre-label">terror</span>
-      </a>
-
+        <span class="genero-nome">terror</span>
+      </a>     
     </div>
   </div>
-
-  <!-- LANÇAMENTOS -->
-  <div class="section" style="margin-top: 28px; padding-bottom: 40px;">
+ 
+  <div class="catalogo" style="margin-top: 28px; padding-bottom: 40px;">
     <h3 class="section-title">Lançamentos</h3>
-    <div class="books-grid">
+    <div class="livros-grid">
 
-      <a class="book-item" href="#">
-        <div class="book-cover book-vento">O Morro dos<br>Ventos<br>Uivantes</div>
-        <span class="book-title">O Morro dos Ventos Uivantes</span>
-        <span class="book-author">Emily Brontë</span>
-        <span class="book-price">R$ 43,90</span>
-      </a>
+      <a class="livros" href="#">
+        <div class="capa livro-morro">
+          <img src="morro-ventos.jpeg" class="morro-ventos">
+         </div>
+        <span class="titulo">O Morro dos Ventos Uivantes</span>
+        <span class="preco">R$ 44,00</span>
+      </a> 
 
-      <a class="book-item" href="#">
-        <div class="book-cover book-it" style="font-size:1.4rem; letter-spacing:-1px;">
-          <span style="font-size:0.55rem; display:block; margin-bottom:2px;">A Coisa</span>
-          <span style="font-size:1.1rem;">STEPHEN<br>KING</span>
+      <a class="livros" href="#">
+        <div class="capa livro-it">
+          <img src="it.jpeg" class="it">
         </div>
-        <span class="book-title">It: A Coisa</span>
-        <span class="book-author">Stephen King</span>
-        <span class="book-price">R$ 59,00</span>
+        <span class="titulo">It: A Coisa</span>
+        <span class="preco">R$ 69,00</span>
       </a>
 
-      <a class="book-item" href="#">
-        <div class="book-cover book-verity" style="font-style:italic; font-size:1.3rem; font-family:'Great Vibes',cursive;">Verity</div>
-        <span class="book-title">Verity</span>
-        <span class="book-author">Colleen Hoover</span>
-        <span class="book-price">R$ 54,00</span>
-      </a>
-
-      <a class="book-item" href="#">
-        <div class="book-cover book-potter">
-          <span style="font-size:0.75rem; font-weight:900; letter-spacing:0.05em;">HARRY<br>POTTER</span>
+      <a class="livros" href="#">
+        <div class="capa livro-verity">
+          <img src="verity.jpeg" class="verity">
         </div>
-        <span class="book-title">Harry Potter e a Pedra Filosofal</span>
-        <span class="book-author">J.K. Rowling</span>
-        <span class="book-price">R$ 36,90</span>
+        <span class="titulo">Verity</span>
+        <span class="preco">R$ 54,00</span>
       </a>
 
-      <a class="book-item" href="#">
-        <div class="book-cover book-quincas">
-          <span style="font-size:0.6rem; text-align:center; line-height:1.4;">Machado de Assis<br><strong style="font-size:0.85rem;">Dom<br>Casmurro</strong></span>
+      <a class="livros" href="#">
+        <div class="capa livro-potter">
+          <img src="harry-potter.jpeg" class="harry-potter">
         </div>
-        <span class="book-title">Dom Casmurro</span>
-        <span class="book-author">Machado de Assis</span>
-        <span class="book-price">R$ 30,90</span>
+        <span class="titulo">Harry Potter e a Pedra Filosofal</span>
+        <span class="preco">R$ 59,00  </span>
+      </a>
+
+      <a class="livros" href="#">
+        <div class="capa livro-dom">
+          <img src="dom-casmurro.jpeg" class="dom-casmurro">
+        </div>
+        <span class="titulo">Dom Casmurro</span>
+        <span class="preco">R$ 29,00</span>
       </a>
 
     </div>
