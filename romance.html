@@ -3,76 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Entrelinhas – Romance</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="entrelinhas-romance.css" />
+  <title>Romance</title>
+  
+  <link rel="stylesheet" href="romance.css">
+
 </head>
 <body>
 
   <nav>
-    <a href="entrelinhas-principal.html" class="nav-logo">Entrelinhas</a>
-    <ul class="nav-links">
-      <li><a href="entrelinhas-principal.html">início</a></li>
-      <li><a href="entrelinhas-promocoes.html">promoções</a></li>
-      <li><a href="#">sobre</a></li>
+    <a href="index.html" class="nav-logo">
+      <img src="logo2.png" alt="entrelinhas" class="logo">
+    </a>
+
+    <ul class="nav-abas">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="promocoes.html">Promoções</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
     </ul>
-    <div class="nav-right">
-      <div class="search-wrapper">
+
+    <div class="nav-direita">
+      <div class="barra-pesquisa">
         <input type="text" placeholder="buscar" />
-        <button>🔍</button>
+        <img src="lupa.png" alt="buscar" class="lupa">
       </div>
-      <a class="nav-icon" href="entrelinhas-carrinho.html">🛒</a>
-      <a class="nav-icon" href="entrelinhas-login.html">👤</a>
+
+      <a class="nav-icone" href="carrinho.html">
+        <img src="carrinho.png" alt="carrinho" class="carrinho">
+      </a>
+      
     </div>
   </nav>
 
-  <div class="page">
-    <h1 class="genre-header">Romance</h1>
+  <div class="catalogo">
+    <div class="fundo">
 
-    <div class="books-grid">
+      <div class="catalogo-header"> 
+        <h1 class="section-title">Romance</h1> 
+        <hr class="linha-titulo"> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-hoover">É ASSIM QUE<br>ACABA<br><span style="font-weight:300;font-size:0.52rem;">Colleen Hoover</span></div>
-        <span class="book-title">É Assim que Acaba</span>
-        <span class="book-price">R$ 54,00</span>
-      </a>
+        <div class="livros-grid"> 
+        <a class="livros" href="#"> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-culpa">A CULPA É<br>DAS ESTRELAS<br><span style="font-weight:300;font-size:0.52rem;">John Green</span></div>
-        <span class="book-title">A Culpa é das Estrelas</span>
-        <span class="book-price">R$ 45,00</span>
-      </a>
+        <div class="capa"> 
+        <img src="colleen-hoover.jpg" class="collen-hoover">
+       </div> 
+        <span class="titulo">É assim Que Acaba</span> 
+        <span class="preco">R$ 54,00</span> 
+      </a> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-casimiro" style="font-family:'Great Vibes',cursive;font-size:0.9rem;">Dom<br>Casmurro</div>
-        <span class="book-title">Dom Casmurro</span>
-        <span class="book-price">R$ 30,90</span>
-      </a>
+      <a class="livros" href="#"> 
+        <div class="capa"> 
+        <img src="john-green.jpg" class="joohn-green"> 
+      </div> 
+        <span class="titulo">A Culpa é das Estrelas</span> 
+        <span class="preco">R$ 42,00</span> 
+      </a> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-cometas">COMO AS<br>ESTRELAS E OS<br>COMETAS<br><span style="font-weight:300;font-size:0.5rem;">Jojo Moyes</span></div>
-        <span class="book-title">Como as Estrelas e os Cometas</span>
-        <span class="book-price">R$ 38,00</span>
-      </a>
+      <a class="livros" href="#"> 
+        <div class="capa"> 
+        <img src="dom-casmurro.jpeg" class="dom-casmurro"> 
+      </div> 
+        <span class="titulo">Dom Casmurro</span> 
+        <span class="preco">R$ 29,00</span> 
+      </a> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-antes">ANTES DE<br>VOCÊ<br><span style="font-weight:300;font-size:0.52rem;">Jojo Moyes</span></div>
-        <span class="book-title">Antes de Você</span>
-        <span class="book-price">R$ 43,00</span>
-      </a>
+      <a class="livros" href="#"> 
+        <div class="capa"> 
+        <img src="jojo-moyes.jpg" class="jojo-moyes"> 
+      </div> 
+        <span class="titulo">Como eu Era Antes de Você</span> 
+        <span class="preco">R$ 49,00 </span> 
+      </a> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-morro">O MORRO DOS<br>VENTOS<br>UIVANTES<br><span style="font-weight:300;font-size:0.5rem;">Emily Brontë</span></div>
-        <span class="book-title">O Morro dos Ventos Uivantes</span>
-        <span class="book-price">R$ 43,00</span>
-      </a>
+      <a class="livros" href="#"> 
+        <div class="capa"> 
+        <img src="morro-ventos.jpeg" class="morro-ventos"> 
+      </div> 
+        <span class="titulo">O Morro dos Ventos Uivantes</span> 
+        <span class="preco">R$ 44,00</span> 
+      </a> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-orgulho">ORGULHO E<br>PRECONCEITO<br><span style="font-weight:300;font-size:0.5rem;">Jane Austen</span></div>
-        <span class="book-title">Orgulho e Preconceito</span>
-        <span class="book-price">R$ 38,00</span>
-      </a>
+      <a class="livros" href="#"> 
+        <div class="capa">
+         <img src="orgulho-preconceito.jpg" class="orgulho-preconceito"> 
+        </div> 
+        <span class="titulo">Orgulho e Preconceito</span> 
+        <span class="preco">R$ 39,00</span> 
+      </a> 
 
+      </div> 
+      </div>
+
+      
     </div>
   </div>
 

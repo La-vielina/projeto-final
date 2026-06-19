@@ -4,41 +4,41 @@
   padding: 0;
 }
 
-/* ── BASE ── */
+/* BASE */
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "inika";
+  src: url("inika.regular.ttf") format("truetype");
+
   background-color: #E8D5C0;
-  color: #3B1A0D;
+  color: #62241b;
   min-height: 100vh;
 }
 
-/* ── NAVBAR ── */
+/* NAVBAR */
 nav {
   background-color: #D6B49A;
-  padding: 10px 40px;
   display: flex;
   align-items: center;
-  gap: 36px;
-  box-shadow: 0 2px 8px rgba(60, 20, 0, 0.12);
+  justify-content: space-between;
+  padding: 15px 40px;
+  box-shadow: 0 2px 8px rgba(60,20,0,.15);
 }
 
 .logo {
-  height: 130px;
-  width: 230px;
+  width: 220px;
+  height: auto;
 }
 
 .nav-abas {
   display: flex;
-  gap: 28px;
   list-style: none;
+  gap: 35px;
 }
 
 .nav-abas a {
-  font-size: 0.88rem;
-  color: #3B1A0D;
   text-decoration: none;
-  font-weight: 400;
-  transition: color 0.2s;
+  color: #3B1A0D;
+  font-size: 16px;
 }
 
 .nav-abas a:hover {
@@ -46,10 +46,9 @@ nav {
 }
 
 .nav-direita {
-  margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 20px;
 }
 
 .barra-pesquisa {
@@ -62,15 +61,15 @@ nav {
 }
 
 .lupa{
-    height: 13px;
-    width: 13px;
-    color: #3B1A0D;
+  height: 13px;
+  width: 13px;
+  color: #62241b;
 }
 
 .carrinho{
-    height: 15px;
-    width: 15px;
-    color: #3B1A0D;
+  height: 15px;
+  width: 15px;
+  color: #62241b;
 }
 
 .barra-pesquisa input {
@@ -80,7 +79,7 @@ nav {
   font-size: 0.82rem;
   font-family: 'Lato', sans-serif;
   width: 130px;
-  color: #3B1A0D;
+  color: #62241b;
 }
 
 .barra-pesquisa input::placeholder {
@@ -173,7 +172,7 @@ nav {
 
 .verity {
   background: linear-gradient(145deg, #e8d5c0, #c4956a);
-  color: #3B1A0D;
+  color: #62241b;
   font-family: 'Great Vibes', cursive;
   font-size: 0.85rem;
 }
@@ -188,19 +187,19 @@ nav {
 
 .livro-nome {
   font-size: 0.8rem;
-  color: #3B1A0D;
+  color: #62241b;
   line-height: 1.3;
 }
 
 .preco {
   font-size: 0.82rem;
-  color: #3B1A0D;
+  color: #62241b;
   text-align: center;
 }
 
 .total {
   font-size: 0.82rem;
-  color: #3B1A0D;
+  color: #62241b;
   text-align: center;
   font-weight: 400;
 }
@@ -278,7 +277,7 @@ nav {
 .resumo-titulo {
   font-size: 0.88rem;
   font-weight: 400;
-  color: #3B1A0D;
+  color: #62241b;
   text-align: center;
   padding-bottom: 14px;
   border-bottom: 1px solid rgba(92, 48, 32, 0.2);
@@ -294,7 +293,7 @@ nav {
 }
 
 .resumo-row span:last-child {
-  color: #3B1A0D;
+  color: #62241b;
   font-weight: 400;
 }
 
@@ -308,7 +307,7 @@ nav {
   display: flex;
   justify-content: space-between;
   font-size: 0.88rem;
-  color: #3B1A0D;
+  color: #62241b;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -327,6 +326,8 @@ nav {
   letter-spacing: 0.03em;
   transition: background-color 0.2s;
 }
+
+
 
 .finalizar:hover {
   background-color: #7A2912;
