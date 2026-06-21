@@ -3,70 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Entrelinhas – Teológico</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="entrelinhas-teologico.css" />
+  <title>Teológico</title>
+  
+  <link rel="stylesheet" href="teologico.css">
+
 </head>
 <body>
 
   <nav>
-    <a href="entrelinhas-principal.html" class="nav-logo">Entrelinhas</a>
-    <ul class="nav-links">
-      <li><a href="entrelinhas-principal.html">início</a></li>
-      <li><a href="entrelinhas-promocoes.html">promoções</a></li>
-      <li><a href="#">sobre</a></li>
+    <a href="index.html" class="nav-logo">
+      <img src="logo2.png" alt="entrelinhas" class="logo">
+    </a>
+
+    <ul class="nav-abas">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="promocoes.html">Promoções</a></li>
+      <li><a href="sobre.html">Sobre Nós</a></li>
     </ul>
-    <div class="nav-right">
-      <div class="search-wrapper">
+
+    <div class="nav-direita">
+      <div class="barra-pesquisa">
         <input type="text" placeholder="buscar" />
-        <button>🔍</button>
+        <img src="lupa.png" alt="buscar" class="lupa">
       </div>
-      <a class="nav-icon" href="entrelinhas-carrinho.html">🛒</a>
-      <a class="nav-icon" href="entrelinhas-login.html">👤</a>
+
+      <a class="nav-icone" href="carrinho.html">
+        <img src="carrinho.png" alt="carrinho" class="carrinho">
+      </a>
+      
     </div>
   </nav>
 
-  <div class="page">
-    <h1 class="genre-header">Teológico</h1>
+  <div class="catalogo">
+    <div class="fundo">
 
-    <div class="books-grid">
+      <div class="catalogo-header"> 
+        <h1 class="section-title">Teológico</h1> 
+        <hr class="linha-titulo"> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-biblia">BÍBLIA<br>SAGRADA<br><span style="font-weight:300;font-size:0.5rem;">NVI</span></div>
-        <span class="book-title">Bíblia Sagrada</span>
-        <span class="book-price">R$ 79,00</span>
-      </a>
+        <div class="livros-grid"> 
+        <a class="livros" href="#"> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-lewis">CRISTIANISMO<br>PURO E<br>ESSENCIAL<br><span style="font-weight:300;font-size:0.5rem;">C.S. Lewis</span></div>
-        <span class="book-title">Cristianismo Puro e Essencial</span>
-        <span class="book-price">R$ 43,00</span>
-      </a>
+        <div class="capa"> 
+        <img src="biblia.jpeg" class="biblia">
+       </div> 
+        <span class="titulo">Bíblia Sagrada</span> 
+        <span class="preco">R$ 79,00</span> 
+      </a> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-peregrino">O PEREGRINO<br><span style="font-weight:300;font-size:0.5rem;">John Bunyan</span></div>
-        <span class="book-title">O Peregrino</span>
-        <span class="book-price">R$ 30,00</span>
-      </a>
+      <a class="livros" href="#"> 
+        <div class="capa"> 
+        <img src="cristianismo.jpeg" class="cristianismo"> 
+      </div> 
+        <span class="titulo">Cristianismo Puro e Simples</span> 
+        <span class="preco">R$ 45,00</span> 
+      </a> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-uma-vida">UMA VIDA<br>COM<br>PROPÓSITO<br><span style="font-weight:300;font-size:0.5rem;">Rick Warren</span></div>
-        <span class="book-title">Uma Vida com Propósito</span>
-        <span class="book-price">R$ 38,00</span>
-      </a>
+      <a class="livros" href="#"> 
+        <div class="capa"> 
+        <img src="peregrino.jpeg" class="O Peregrino"> 
+      </div> 
+        <span class="titulo">O Peregrino</span> 
+        <span class="preco">R$ 39,00</span> 
+      </a> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-teologia">TEOLOGIA<br>SISTEMÁTICA<br><span style="font-weight:300;font-size:0.5rem;">Wayne Grudem</span></div>
-        <span class="book-title">Teologia Sistemática</span>
-        <span class="book-price">R$ 89,00</span>
-      </a>
+      <a class="livros" href="#"> 
+        <div class="capa"> 
+        <img src="proposito.jpeg" class="proposito"> 
+      </div> 
+        <span class="titulo">Uma Vida com Propósito</span> 
+        <span class="preco">R$ 42,00 </span> 
+      </a> 
 
-      <a class="book-card" href="#">
-        <div class="book-cover book-deus">O DEUS<br>PRÓDIGO<br><span style="font-weight:300;font-size:0.5rem;">Timothy Keller</span></div>
-        <span class="book-title">O Deus Pródigo</span>
-        <span class="book-price">R$ 29,90</span>
-      </a>
+      <a class="livros" href="#"> 
+        <div class="capa"> 
+        <img src="teologia.jpeg" class="teologia"> 
+      </div> 
+        <span class="titulo">Teologia Sistemática</span> 
+        <span class="preco">R$ 89,00</span> 
+      </a> 
 
+      <a class="livros" href="#"> 
+        <div class="capa">
+         <img src="prodigo.jpeg" class="prodigo"> 
+        </div> 
+        <span class="titulo">O Deus Pródigo</span> 
+        <span class="preco">R$ 47,00</span> 
+      </a> 
+
+      </div> 
+      </div>
+
+      
     </div>
   </div>
 

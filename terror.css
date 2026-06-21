@@ -1,10 +1,180 @@
-@import url('entrelinhas-genero-base.css');
+*, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.genre-header { color: #1A0A0A; }
+    body {
+      font-family: "inika";
+      src: url("inika.regular.ttf") format("typetrue");
 
-.book-it        { background: linear-gradient(160deg, #0d0d0d, #2a0000); color: #cc0000; }
-.book-dracula   { background: linear-gradient(160deg, #1a0000, #3a0a0a); color: #c8a090; }
-.book-shining   { background: linear-gradient(160deg, #1a1a3a, #3a3a6a); color: #e0d8f0; }
-.book-cronicas  { background: linear-gradient(160deg, #5a8a3a, #8aad5a); color: #f5f0e0; }
-.book-converter { background: linear-gradient(160deg, #2a1a0a, #5a3010); color: #e8c890; }
-.book-potter2   { background: linear-gradient(160deg, #7a2912, #c4180c); color: #f5d700; }
+      background-color: #E8D5C0;
+      color: #3B1A0D;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: #D6B49A;
+      padding: 10px 40px;
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      box-shadow: 0 2px 8px rgba(60, 20, 0, 0.12);
+    }
+
+    .logo {
+     height:150px;
+     width:250px
+    }
+
+    .nav-abas {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-abas a {
+      font-size: 0.88rem;
+      color: #3B1A0D;
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+
+    .nav-abas a:hover {
+      color: #7A2912;
+    }
+
+    .nav-direita {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .barra-pesquisa {
+      display: flex;
+      align-items: center;
+      background: #FFE7D7;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid #C4956A;
+    }
+
+    .lupa{
+      height: 13px;
+      width: 13px;
+      color: #3B1A0D;
+    }
+
+    .carrinho{
+      height: 15px;
+      width: 15px;
+      color: #3B1A0D;
+    }
+
+    /* BARRA DE PESQUISA */
+
+    .barra-pesquisa input {
+      border: none;
+      outline: none;
+      padding: 5px 10px;
+      font-size: 0.82rem;
+      font-family: 'Lato', sans-serif;
+      width: 130px;
+      color: #3B1A0D;
+    }
+
+    .barra-pesquisa input::placeholder {
+      color: #A0786A;
+    }
+
+    .barra-pesquisa button {
+      background: none;
+      border: none;
+      padding: 5px 8px;
+      cursor: pointer;
+      color: #7A5040;
+      font-size: 0.9rem;
+    }
+
+/* CATÁLOGO */
+
+.catalogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.fundo {
+    width: 92%;
+    background: #7A5040;
+    border-radius: 20px;
+    padding: 30px 40px 45px;
+}
+
+.catalogo-header {
+    width: 100%;
+}
+
+.section-title {
+    color: #FFE7D7;
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 18px;
+}
+
+.linha-titulo {
+    width: 100%;
+    border: none;
+    border-top: 3px solid #FFE7D7;
+    margin-bottom: 45px;
+}
+
+/* LIVROS */
+
+.livros-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.livros {
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.capa {
+    width: 150px;
+    height: 230px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,.25);
+}
+
+.capa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.titulo {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #FFE7D7;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.preco {
+    margin-top: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFE7D7;
+}
