@@ -52,6 +52,8 @@
       gap: 14px;
     }
 
+    /* BARRA DE PESQUISA */
+
     .barra-pesquisa {
       display: flex;
       align-items: center;
@@ -96,12 +98,16 @@
       font-size: 0.9rem;
     }
 
+    /* LETREIRO */
+
     .hero {
       margin: 20px 40px 0;
       background-color: #C49A7A;
-      background-image:
-        radial-gradient(ellipse at 60% 40%, rgba(140, 80, 40, 0.45) 0%, transparent 60%),
-        radial-gradient(ellipse at 30% 70%, rgba(100, 50, 20, 0.3) 0%, transparent 50%);
+
+      background-image: url("fundo.png");
+      background-size: cover;
+      background-position: center;
+
       border-radius: 16px;
       padding: 32px 36px 28px;
       min-height: 130px;
@@ -126,6 +132,8 @@
       max-width: 220px;
       line-height: 1.5;
     }
+
+    /* ABAS */
 
     .section {
       padding: 24px 40px 0;
@@ -186,6 +194,8 @@
       height: 140px;
       object-fit: cover;
     }
+
+    /* CATALOGO */
 
     .section-title {
       font-size: 1.5rem;

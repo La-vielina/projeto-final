@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Admin</title> 
+
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="topbar-logo">Entrelinhas</a>
+    <button class="topbar-menu-btn">☰</button>
+    <div class="topbar-search">
+      <input type="text" placeholder="pesquisar livros, autores, categorias..." />
+      <div class="topbar-search-dot"></div>
+    </div>
+    <div class="topbar-user">
+      <div class="topbar-user-icon">👤</div>
+      <span>Administrador</span>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <ul class="sidebar-nav">
+        <li><a href="#" class="active">🏠 Dashboard</a></li>
+        <li><a href="#">Livros</a></li>
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Autores</a></li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Pedidos</a></li>
+        <li><a href="#">Estoques</a></li>
+        <li><a href="#">Promoções</a></li>
+        <li><a href="#">Relatórios</a></li>
+        <li><a href="#">Configurações</a></li>
+      </ul>
+      <a href="login.html" class="sidebar-btn-sair">Sair</a>
+    </aside>
+
+    <main class="main">
+
+      <div class="kpi-row">
+
+        <div class="kpi-card">
+          <span class="kpi-icon">📚</span>
+          <div class="kpi-info">
+            <span class="kpi-label">Total de livros</span>
+            <span class="kpi-value">36</span>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-icon">👥</span>
+          <div class="kpi-info">
+            <span class="kpi-label">Total de clientes</span>
+            <span class="kpi-value">0</span>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-icon">🛒</span>
+          <div class="kpi-info">
+            <span class="kpi-label">Pedidos realizados</span>
+            <span class="kpi-value">0</span>
+          </div>
+        </div>
+
+        <div class="kpi-card">
+          <span class="kpi-icon">💰</span>
+          <div class="kpi-info">
+            <span class="kpi-label">Faturamento do mês</span>
+            <span class="kpi-value">R$ 0,00</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mid-row">
+
+        <div class="panel">
+          <div class="panel-title">📦 Resumo de estoque</div>
+          <div class="estoque-stats">
+            <div class="estoque-stat">
+              <span class="estoque-stat-icon">📖</span>
+              <span class="estoque-stat-label">Em estoque</span>
+              <span class="estoque-stat-value">36</span>
+            </div>
+            <div class="estoque-stat">
+              <span class="estoque-stat-icon">⚠️</span>
+              <span class="estoque-stat-label">Estoque baixo</span>
+              <span class="estoque-stat-value">0</span>
+            </div>
+            <div class="estoque-stat">
+              <span class="estoque-stat-icon">🚫</span>
+              <span class="estoque-stat-label">Esgotados</span>
+              <span class="estoque-stat-value">0</span>
+            </div>
+          </div>
+          <div class="estoque-alert">
+            <span class="estoque-alert-text">🔔 livros com estoque muito baixo</span>
+            <button class="estoque-alert-btn">ver todos</button>
+          </div>
+        </div>
+        
+        <div class="panel">
+          <div class="chart-header">
+            <div class="panel-title" style="margin-bottom:0;">📈 Vendas dos últimos meses</div>
+            <a href="#" class="chart-link">Ver ano →</a>
+          </div>
+          <div style="position:relative; padding-left:30px; margin-top:10px;">
+            <div class="chart-y-labels">
+              <span>0</span>
+              <span>20</span>
+              <span>40</span>
+              <span>60</span>
+              <span>80</span>
+            </div>
+            <div class="chart-area">
+              <div class="chart-bar-group">
+                <div class="chart-bar" style="height:2px;"></div>
+                <span class="chart-bar-label">Jan</span>
+              </div>
+              <div class="chart-bar-group">
+                <div class="chart-bar" style="height:2px;"></div>
+                <span class="chart-bar-label">Fev</span>
+              </div>
+              <div class="chart-bar-group">
+                <div class="chart-bar" style="height:2px;"></div>
+                <span class="chart-bar-label">Mar</span>
+              </div>
+              <div class="chart-bar-group">
+                <div class="chart-bar" style="height:2px;"></div>
+                <span class="chart-bar-label">Abr</span>
+              </div>
+              <div class="chart-bar-group">
+                <div class="chart-bar" style="height:2px;"></div>
+                <span class="chart-bar-label">Mai</span>
+              </div>
+              <div class="chart-bar-group">
+                <div class="chart-bar" style="height:2px;"></div>
+                <span class="chart-bar-label">Jun</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM ROW: Mais vendidos + Pedidos + Avisos -->
+      <div class="bottom-row">
+
+        <!-- Livros mais vendidos -->
+        <div class="panel">
+          <div class="panel-title">🏆 Livros mais vendidos</div>
+          <ul class="vendidos-list">
+            <li class="vendidos-item">
+              <span><span class="vendidos-rank">1 -</span></span>
+              <span class="vendidos-count">0<br>vendas</span>
+            </li>
+            <li class="vendidos-item">
+              <span><span class="vendidos-rank">2 -</span></span>
+              <span class="vendidos-count">0<br>vendas</span>
+            </li>
+            <li class="vendidos-item">
+              <span><span class="vendidos-rank">3 -</span></span>
+              <span class="vendidos-count">0<br>vendas</span>
+            </li>
+          </ul>
+          <button class="panel-btn">ver relatório completo</button>
+        </div>
+
+        <!-- Pedidos recentes -->
+        <div class="panel">
+          <div class="pedidos-header-row">
+            <div class="panel-title" style="margin-bottom:0;">🛒 Pedidos recentes</div>
+            <button class="pedidos-ver-btn">Ver todos</button>
+          </div>
+          <div class="pedidos-table-head">
+            <span>Pedido</span>
+            <span>Cliente</span>
+            <span>Data</span>
+            <span>Status</span>
+            <span>Total</span>
+          </div>
+          <div class="pedidos-empty">Nenhum pedido ainda.</div>
+        </div>
+
+        <!-- Avisos importantes -->
+        <div class="panel">
+          <div class="panel-title">🔔 Avisos importantes</div>
+          <div class="avisos-empty">Nenhum aviso no momento.</div>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <!-- ══ AÇÕES RÁPIDAS ══ -->
+  <footer class="acoes-footer">
+    <div class="acoes-title">⚡ Ações rápidas</div>
+    <div class="acoes-grid">
+
+      <a href="#" class="acao-card">
+        <span class="acao-icon">➕</span>
+        <div class="acao-info">
+          <span class="acao-title">Adicionar livro</span>
+          <span class="acao-sub">Cadastrar novo livro</span>
+        </div>
+      </a>
+
+      <a href="#" class="acao-card">
+        <span class="acao-icon">📂</span>
+        <div class="acao-info">
+          <span class="acao-title">Gerenciar categorias</span>
+          <span class="acao-sub">Adicionar ou editar</span>
+        </div>
+      </a>
+
+      <a href="#" class="acao-card">
+        <span class="acao-icon">👤</span>
+        <div class="acao-info">
+          <span class="acao-title">Gerenciar clientes</span>
+          <span class="acao-sub">Ver e editar clientes</span>
+        </div>
+      </a>
+
+      <a href="#" class="acao-card">
+        <span class="acao-icon">🛒</span>
+        <div class="acao-info">
+          <span class="acao-title">Ver pedidos</span>
+          <span class="acao-sub">Cadastrar novo livro</span>
+        </div>
+      </a>
+
+      <a href="#" class="acao-card">
+        <span class="acao-icon">🏷️</span>
+        <div class="acao-info">
+          <span class="acao-title">Criar promoção</span>
+          <span class="acao-sub">Criar nova promoção</span>
+        </div>
+      </a>
+
+      <a href="#" class="acao-card">
+        <span class="acao-icon">📊</span>
+        <div class="acao-info">
+          <span class="acao-title">Ver relatórios</span>
+          <span class="acao-sub">Análises e relatórios</span>
+        </div>
+      </a>
+
+    </div>
+  </footer>
+
+</body>
+</html>
