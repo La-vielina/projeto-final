@@ -9,8 +9,10 @@
 </head>
 <body>
 
+<!--HEADER-->
+
    <nav>
-   <img src="logo2.png" alt="Logo" class="logo" />
+   <img src="imagens-visual/logo2.png" alt="Logo" class="logo" />
 
     <ul class="nav-abas">
       <li><a href="index.html">Início</a></li>
@@ -21,19 +23,21 @@
    <div class="nav-direita">
       <div class="barra-pesquisa">
         <input type="text" placeholder="buscar" />
-        <img src="lupa.png" alt="buscar" class="lupa">
+        <img src="imagens-icons/lupa.png" alt="buscar" class="lupa">
       </div>
 
       <a class="nav-icone" href="carrinho.html">
-        <img src="carrinho.png" alt="carrinho" class="carrinho">
+        <img src="imagens-icons/carrinho.png" alt="carrinho" class="carrinho">
       </a>
     </div>
   </nav>
 
+ <!--NAV LATERAL-->
+
   <div class="layout">
 
-    <aside class="infos">
-      <ul class="infos-nav">
+    <aside class="menu-lateral">
+      <ul class="lateral-nav">
         <li><a href="#" class="active">Dashboard</a></li>
         <li><a href="#">Livros</a></li>
         <li><a href="#">Categorias</a></li>
@@ -45,161 +49,176 @@
         <li><a href="#">Relatórios</a></li>
         <li><a href="#">Configurações</a></li>
       </ul>
-      <a href="login.html" class="infos-sair">Sair</a>
+      <a href="login.html" class="menu-sair">Sair</a>
     </aside>
 
-    <main class="main">
+  <!--INFORMAÇÕES DE CIMA-->
 
-      <div class="kpi-row">
+    <main class="principal">
+      <div class="indicadores">
 
-        <div class="kpi-card">
-          <span class="kpi-icon"><img src="livro-icon.png" alt="livros"></span>
-          <div class="kpi-info">
-            <span class="kpi-label">Total de livros</span>
-            <span class="kpi-value">36</span>
+        <div class="indicadores-card">
+          <span class="indicadores-icon"><img src="imagens-icons/livro-icon.png" alt="livros"></span>
+          <div class="indicadores-infos">
+            <span class="indicadores-titulo">Total de livros</span>
+            <span class="indicadores-valor">36</span>
           </div>
         </div>
 
-        <div class="kpi-card">
-          <span class="kpi-icon"><img src="clientes.png" alt="clientes"></span>
-          <div class="kpi-info">
-            <span class="kpi-label">Total de clientes</span>
-            <span class="kpi-value">0</span>
+        <div class="indicadores-card">
+          <span class="indicadores-icon"><img src="imagens-icons/clientes.png" alt="clientes"></span>
+          <div class="indicadores-infos">
+            <span class="indicadores-titulo">Total de clientes</span>
+            <span class="indicadores-valor">0</span>
           </div>
         </div>
 
-        <div class="kpi-card">
-          <img src="carrinho.png" alt="carrinho">
-          <div class="kpi-info">
-            <span class="kpi-label">Pedidos realizados</span>
-            <span class="kpi-value">0</span>
+        <div class="indicadores-card">
+          <span class="indicadores-icon"><img src="imagens-icons/carrinho.png" alt="carrinho"></span>
+          <div class="indicadores-infos">
+            <span class="indicadores-titulo">Pedidos realizados</span>
+            <span class="indicadores-valor">0</span>
           </div>
         </div>
 
-        <div class="kpi-card">
-          <span class="kpi-icon"><img src="moeda.png" al="faturamento"></span>
-          <div class="kpi-info">
-            <span class="kpi-label">Faturamento do mês</span>
-            <span class="kpi-value">R$ 0,00</span>
+        <div class="indicadores-card">
+          <span class="indicadores-icon"><img src="imagens-icons/moeda.png" alt="faturamento"></span>
+          <div class="indicadores-infos">
+            <span class="indicadores-titulo">Faturamento do mês</span>
+            <span class="indicadores-valor">R$ 0,00</span>
           </div>
         </div>
 
       </div>
 
-      <div class="mid-row">
+  <!--INFORMAÇÕES CENTRAIS-->
 
-        <div class="panel">
-          <div class="panel-title"><img src="produtos.png" alt="estoque"></div>
-          <div class="estoque-stats">
-            <div class="estoque-stat">
-              <span class="estoque-stat-icon"><img src="livro-icon.png" alt="em-estoque"></span>
-              <span class="estoque-stat-label">Em estoque</span>
-              <span class="estoque-stat-value">36</span>
+      <div class="central">
+        <div class="painel">
+          <div class="painel-titulo"><img src="imagens-icons/produtos.png" alt="estoque">Resumo de estoque</div>
+          <div class="estoque-status">
+
+            <div class="estoque-item">
+              <span class="estoque-icon"><img src="imagens-icons/livro-icon.png" alt="em-estoque"></span>
+              <span class="estoque-disponibilidade">Em estoque</span>
+              <span class="estoque-valor">36</span>
             </div>
-            <div class="estoque-stat">
-              <span class="estoque-stat-icon">⚠️</span>
-              <span class="estoque-stat-label">Estoque baixo</span>
-              <span class="estoque-stat-value">0</span>
+
+            <div class="estoque-item">
+              <span class="estoque-icon"><img src="imagens-icons/aviso.png" alt="estoque-baixo"></span>
+              <span class="estoque-disponibilidade">Estoque baixo</span>
+              <span class="estoque-valor">0</span>
             </div>
-            <div class="estoque-stat">
-              <span class="estoque-stat-icon">🚫</span>
-              <span class="estoque-stat-label">Esgotados</span>
-              <span class="estoque-stat-value">0</span>
+
+            <div class="estoque-item">
+              <span class="estoque-icon"><img src="imagens-icons/proibido.png" alt="esgotados"></span>
+              <span class="estoque-disponibilidade">Esgotados</span>
+              <span class="estoque-valor">0</span>
             </div>
           </div>
-          <div class="estoque-alert">
-            <span class="estoque-alert-text">🔔 livros com estoque muito baixo</span>
-            <button class="estoque-alert-btn">ver todos</button>
+
+          <div class="estoque-alerta">
+            <span class="alerta-texto"><img src="imagens-icons/sino.png" alt="alerta"> livros com estoque muito baixo</span>
+            <button class="alerta-botao">ver todos</button>
           </div>
         </div>
 
-        <div class="panel">
-          <div class="chart-header">
-            <div class="panel-title" style="margin-bottom:0;">📈 Vendas dos últimos meses</div>
-            <a href="#" class="chart-link">Ver ano →</a>
+<!--GRÁFICO-->
+        <div class="painel">
+          <div class="grafico-header">
+            <div class="painel-titulo"><img src="imagens-icons/grafico1.png" alt="vendas"> Vendas dos últimos meses</div>
+            <a href="#" class="grafico-link">ver ano →</a>
           </div>
           <div style="position:relative; padding-left:30px; margin-top:10px;">
-            <div class="chart-y-labels">
+
+            <div class="grafico-legendas">
               <span>0</span>
               <span>20</span>
               <span>40</span>
               <span>60</span>
               <span>80</span>
             </div>
-            <div class="chart-area">
-              <div class="chart-bar-group">
-                <div class="chart-bar" style="height:2px;"></div>
-                <span class="chart-bar-label">Jan</span>
+
+            <div class="grafico-area">
+              <div class="grupo-barra">
+                <div class="grafico-barra" style="height:2px;"></div>
+                <span class="data-barra">Jan</span>
               </div>
-              <div class="chart-bar-group">
-                <div class="chart-bar" style="height:2px;"></div>
-                <span class="chart-bar-label">Fev</span>
+
+              <div class="grupo-barra">
+                <div class="grafico-barra" style="height:2px;"></div>
+                <span class="data-barra">Fev</span>
               </div>
-              <div class="chart-bar-group">
-                <div class="chart-bar" style="height:2px;"></div>
-                <span class="chart-bar-label">Mar</span>
+
+              <div class="grupo-barra">
+                <div class="grafico-barra" style="height:2px;"></div>
+                <span class="data-barra">Mar</span>
               </div>
-              <div class="chart-bar-group">
-                <div class="chart-bar" style="height:2px;"></div>
-                <span class="chart-bar-label">Abr</span>
+
+              <div class="grupo-barra">
+                <div class="grafico-barra" style="height:2px;"></div>
+                <span class="data-barra">Abr</span>
               </div>
-              <div class="chart-bar-group">
-                <div class="chart-bar" style="height:2px;"></div>
-                <span class="chart-bar-label">Mai</span>
+
+              <div class="grupo-barra">
+                <div class="grafico-barra" style="height:2px;"></div>
+                <span class="data-barra">Mai</span>
               </div>
-              <div class="chart-bar-group">
-                <div class="chart-bar" style="height:2px;"></div>
-                <span class="chart-bar-label">Jun</span>
+
+              <div class="grupo-barra">
+                <div class="grafico-barra" style="height:2px;"></div>
+                <span class="data-barra">Jun</span>
               </div>
+
             </div>
           </div>
         </div>
 
       </div>
 
-      <!-- BOTTOM ROW: Mais vendidos + Pedidos + Avisos -->
-      <div class="bottom-row">
+<!--INFORMAÇÕES DE BAIXO-->
+      <div class="rodape">
+        <div class="painel">
+          <div class="painel-titulo"><img src="imagens-icons/trofeu.png" alt="mais-vendidos"> Livros mais vendidos</div>
 
-        <!-- Livros mais vendidos -->
-        <div class="panel">
-          <div class="panel-title">🏆 Livros mais vendidos</div>
-          <ul class="vendidos-list">
-            <li class="vendidos-item">
-              <span><span class="vendidos-rank">1 -</span></span>
-              <span class="vendidos-count">0<br>vendas</span>
+          <ul class="vendidos-lista">
+            <li class="vendidos-itens">
+              <span><span class="vendidos-rank">1º -</span></span>
+              <span class="vendidos-quantidade">0<br>vendas</span>
             </li>
-            <li class="vendidos-item">
-              <span><span class="vendidos-rank">2 -</span></span>
-              <span class="vendidos-count">0<br>vendas</span>
+
+            <li class="vendidos-itens">
+              <span><span class="vendidos-rank">2º -</span></span>
+              <span class="vendidos-quantidade">0<br>vendas</span>
             </li>
-            <li class="vendidos-item">
-              <span><span class="vendidos-rank">3 -</span></span>
-              <span class="vendidos-count">0<br>vendas</span>
+
+            <li class="vendidos-itens">
+              <span><span class="vendidos-rank">3º -</span></span>
+              <span class="vendidos-quantidade">0<br>vendas</span>
             </li>
+
           </ul>
-          <button class="panel-btn">ver relatório completo</button>
+          <button class="painel-botao">ver relatório completo</button>
         </div>
 
-        <!-- Pedidos recentes -->
-        <div class="panel">
-          <div class="pedidos-header-row">
-            <div class="panel-title" style="margin-bottom:0;">🛒 Pedidos recentes</div>
-            <button class="pedidos-ver-btn">Ver todos</button>
+        <div class="painel">
+          <div class="header-pedidos">
+            <div class="painel-titulo" style="margin-bottom:0;"><img src="imagens-icons/carrinho.png" alt="pedidos"> Pedidos recentes</div>
+            <button class="ver-botao">ver todos</button>
           </div>
-          <div class="pedidos-table-head">
+          <div class="tabela-pedidos-header">
             <span>Pedido</span>
             <span>Cliente</span>
             <span>Data</span>
             <span>Status</span>
             <span>Total</span>
           </div>
-          <div class="pedidos-empty">Nenhum pedido ainda.</div>
+          <div class="pedidos">Nenhum pedido ainda.</div>
         </div>
 
-        <!-- Avisos importantes -->
-        <div class="panel">
-          <div class="panel-title">🔔 Avisos importantes</div>
-          <div class="avisos-empty">Nenhum aviso no momento.</div>
+        <div class="painel">
+          <div class="painel-titulo"><img src="imagens-icons/sino.png" alt="avisos"> Avisos importantes</div>
+          <div class="avisos">Nenhum aviso no momento.</div>
         </div>
 
       </div>
@@ -207,56 +226,57 @@
     </main>
   </div>
 
-  <!-- ══ AÇÕES RÁPIDAS ══ -->
-  <footer class="acoes-footer">
-    <div class="acoes-title">⚡ Ações rápidas</div>
+  <!--INFORMAÇÕES NO RODAPÉ-->
+
+  <footer class="rodape-acoes">
+    <div class="acoes-titulo"><img src="imagens-icons/raio.png" alt="acoes"> Ações rápidas</div>
     <div class="acoes-grid">
 
       <a href="#" class="acao-card">
-        <span class="acao-icon">➕</span>
-        <div class="acao-info">
-          <span class="acao-title">Adicionar livro</span>
-          <span class="acao-sub">Cadastrar novo livro</span>
+        <span class="acao-icon"><img src="imagens-icons/plus.png" alt="adicionar-livros"></span>
+        <div class="acao-infos">
+          <span class="acao-titulo">Adicionar livro</span>
+          <span class="acao-descricao">Cadastrar novo livro</span>
         </div>
       </a>
 
       <a href="#" class="acao-card">
-        <span class="acao-icon">📂</span>
-        <div class="acao-info">
-          <span class="acao-title">Gerenciar categorias</span>
-          <span class="acao-sub">Adicionar ou editar</span>
+        <span class="acao-icon"><img src="imagens-icons/pasta.png" alt="categorias"></span>
+        <div class="acao-infos">
+          <span class="acao-titulo">Gerenciar categorias</span>
+          <span class="acao-descricao">Adicionar ou editar</span>
         </div>
       </a>
 
       <a href="#" class="acao-card">
-        <span class="acao-icon">👤</span>
-        <div class="acao-info">
-          <span class="acao-title">Gerenciar clientes</span>
-          <span class="acao-sub">Ver e editar clientes</span>
+        <span class="acao-icon"><img src="imagens-icons/usuario.png" alt="clientes"></span>
+        <div class="acao-infos">
+          <span class="acao-titulo">Gerenciar clientes</span>
+          <span class="acao-descricao">Ver e editar clientes</span>
         </div>
       </a>
 
       <a href="#" class="acao-card">
-        <span class="acao-icon">🛒</span>
-        <div class="acao-info">
-          <span class="acao-title">Ver pedidos</span>
-          <span class="acao-sub">Cadastrar novo livro</span>
+        <span class="acao-icon"><img src="imagens-icons/carrinho.png" alt="ver-pedidos"></span>
+        <div class="acao-infos">
+          <span class="acao-titulo">Ver pedidos</span>
+          <span class="acao-descricao">Cadastrar novo livro</span>
         </div>
       </a>
 
       <a href="#" class="acao-card">
-        <span class="acao-icon">🏷️</span>
-        <div class="acao-info">
-          <span class="acao-title">Criar promoção</span>
-          <span class="acao-sub">Criar nova promoção</span>
+        <span class="acao-icon"><img src="imagens-icons/etiqueta.png" alt="promocao"></span>
+        <div class="acao-infos">
+          <span class="acao-titulo">Criar promoção</span>
+          <span class="acao-descricao">Criar nova promoção</span>
         </div>
       </a>
 
       <a href="#" class="acao-card">
-        <span class="acao-icon">📊</span>
-        <div class="acao-info">
-          <span class="acao-title">Ver relatórios</span>
-          <span class="acao-sub">Análises e relatórios</span>
+        <span class="acao-icon"><img src="imagens-icons/grafico2.png" alt="relatorios"></span>
+        <div class="acao-infos">
+          <span class="acao-titulo">Ver relatórios</span>
+          <span class="acao-descricao">Análises e relatórios</span>
         </div>
       </a>
 
