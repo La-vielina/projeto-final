@@ -37,22 +37,6 @@
 
   <div class="layout">
 
-    <aside class="menu-lateral">
-      <ul class="lateral-nav">
-        <li><a href="#" class="active">Dashboard</a></li>
-        <li><a href="#">Livros</a></li>
-        <li><a href="#">Categorias</a></li>
-        <li><a href="#">Autores</a></li>
-        <li><a href="#">Clientes</a></li>
-        <li><a href="#">Pedidos</a></li>
-        <li><a href="#">Estoques</a></li>
-        <li><a href="#">Promoções</a></li>
-        <li><a href="#">Relatórios</a></li>
-        <li><a href="#">Configurações</a></li>
-      </ul>
-      <a href="login.html" class="menu-sair">Sair</a>
-    </aside>
-
   <!--INFORMAÇÕES DE CIMA-->
 
     <main class="principal">
@@ -74,22 +58,6 @@
           </div>
         </div>
 
-        <div class="indicadores-card">
-          <span class="indicadores-icon"><img src="imagens-icons/carrinho.png" alt="carrinho"></span>
-          <div class="indicadores-infos">
-            <span class="indicadores-titulo">Pedidos realizados</span>
-            <span class="indicadores-valor">0</span>
-          </div>
-        </div>
-
-        <div class="indicadores-card">
-          <span class="indicadores-icon"><img src="imagens-icons/moeda.png" alt="faturamento"></span>
-          <div class="indicadores-infos">
-            <span class="indicadores-titulo">Faturamento do mês</span>
-            <span class="indicadores-valor">R$ 0,00</span>
-          </div>
-        </div>
-
       </div>
 
   <!--INFORMAÇÕES CENTRAIS-->
@@ -104,24 +72,6 @@
               <span class="estoque-disponibilidade">Em estoque</span>
               <span class="estoque-valor">36</span>
             </div>
-
-            <div class="estoque-item">
-              <span class="estoque-icon"><img src="imagens-icons/aviso.png" alt="estoque-baixo"></span>
-              <span class="estoque-disponibilidade">Estoque baixo</span>
-              <span class="estoque-valor">0</span>
-            </div>
-
-            <div class="estoque-item">
-              <span class="estoque-icon"><img src="imagens-icons/proibido.png" alt="esgotados"></span>
-              <span class="estoque-disponibilidade">Esgotados</span>
-              <span class="estoque-valor">0</span>
-            </div>
-          </div>
-
-          <div class="estoque-alerta">
-            <span class="alerta-texto"><img src="imagens-icons/sino.png" alt="alerta"> livros com estoque muito baixo</span>
-            <button class="alerta-botao">ver todos</button>
-          </div>
         </div>
 
 <!--GRÁFICO-->
@@ -178,30 +128,6 @@
       </div>
 
 <!--INFORMAÇÕES DE BAIXO-->
-      <div class="rodape">
-        <div class="painel">
-          <div class="painel-titulo"><img src="imagens-icons/trofeu.png" alt="mais-vendidos"> Livros mais vendidos</div>
-
-          <ul class="vendidos-lista">
-            <li class="vendidos-itens">
-              <span><span class="vendidos-rank">1º -</span></span>
-              <span class="vendidos-quantidade">0<br>vendas</span>
-            </li>
-
-            <li class="vendidos-itens">
-              <span><span class="vendidos-rank">2º -</span></span>
-              <span class="vendidos-quantidade">0<br>vendas</span>
-            </li>
-
-            <li class="vendidos-itens">
-              <span><span class="vendidos-rank">3º -</span></span>
-              <span class="vendidos-quantidade">0<br>vendas</span>
-            </li>
-
-          </ul>
-          <button class="painel-botao">ver relatório completo</button>
-        </div>
-
         <div class="painel">
           <div class="header-pedidos">
             <div class="painel-titulo" style="margin-bottom:0;"><img src="imagens-icons/carrinho.png" alt="pedidos"> Pedidos recentes</div>
@@ -217,72 +143,10 @@
           <div class="pedidos">Nenhum pedido ainda.</div>
         </div>
 
-        <div class="painel">
-          <div class="painel-titulo"><img src="imagens-icons/sino.png" alt="avisos"> Avisos importantes</div>
-          <div class="avisos">Nenhum aviso no momento.</div>
-        </div>
-
       </div>
 
     </main>
   </div>
-
-  <!--INFORMAÇÕES NO RODAPÉ-->
-
-  <footer class="rodape-acoes">
-    <div class="acoes-titulo"><img src="imagens-icons/raio.png" alt="acoes"> Ações rápidas</div>
-    <div class="acoes-grid">
-
-      <a href="#" class="acao-card">
-        <span class="acao-icon"><img src="imagens-icons/plus.png" alt="adicionar-livros"></span>
-        <div class="acao-infos">
-          <span class="acao-titulo">Adicionar livro</span>
-          <span class="acao-descricao">Cadastrar novo livro</span>
-        </div>
-      </a>
-
-      <a href="#" class="acao-card">
-        <span class="acao-icon"><img src="imagens-icons/pasta.png" alt="categorias"></span>
-        <div class="acao-infos">
-          <span class="acao-titulo">Gerenciar categorias</span>
-          <span class="acao-descricao">Adicionar ou editar</span>
-        </div>
-      </a>
-
-      <a href="#" class="acao-card">
-        <span class="acao-icon"><img src="imagens-icons/usuario.png" alt="clientes"></span>
-        <div class="acao-infos">
-          <span class="acao-titulo">Gerenciar clientes</span>
-          <span class="acao-descricao">Ver e editar clientes</span>
-        </div>
-      </a>
-
-      <a href="#" class="acao-card">
-        <span class="acao-icon"><img src="imagens-icons/carrinho.png" alt="ver-pedidos"></span>
-        <div class="acao-infos">
-          <span class="acao-titulo">Ver pedidos</span>
-          <span class="acao-descricao">Cadastrar novo livro</span>
-        </div>
-      </a>
-
-      <a href="#" class="acao-card">
-        <span class="acao-icon"><img src="imagens-icons/etiqueta.png" alt="promocao"></span>
-        <div class="acao-infos">
-          <span class="acao-titulo">Criar promoção</span>
-          <span class="acao-descricao">Criar nova promoção</span>
-        </div>
-      </a>
-
-      <a href="#" class="acao-card">
-        <span class="acao-icon"><img src="imagens-icons/grafico2.png" alt="relatorios"></span>
-        <div class="acao-infos">
-          <span class="acao-titulo">Ver relatórios</span>
-          <span class="acao-descricao">Análises e relatórios</span>
-        </div>
-      </a>
-
-    </div>
-  </footer>
 
 </body>
 </html>
