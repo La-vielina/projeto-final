@@ -14,90 +14,54 @@
       min-height: 100vh;
     }
 
-    nav {
-      background-color: #D6B49A;
-      padding: 10px 40px;
-      display: flex;
-      align-items: center;
-      gap: 36px;
-      box-shadow: 0 2px 8px rgba(60, 20, 0, 0.12);
-    }
+    /* NAVBAR */
+nav {
+  background-color: #D6B49A;
+  display: flex;
+  align-items: center; 
+  padding: 15px 40px;
+  box-shadow: 0 2px 8px rgba(60,20,0,.15);
+}
 
-    .logo {
-     height:150px;
-     width:250px
-    }
+.logo {
+  width: 180px;
+  height: 70px;
+}
 
-    .nav-abas {
-      display: flex;
-      gap: 28px;
-      list-style: none;
-    }
+.nav-abas {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  margin: 0 auto;
+}
 
-    .nav-abas a {
-      font-size: 0.88rem;
-      color: #3B1A0D;
-      text-decoration: none;
-      font-weight: 400;
-      transition: color 0.2s;
-    }
+.nav-abas a {
+  text-decoration: none;
+  color: #3B1A0D;
+  font-size: 15px;
+}
 
-    .nav-abas a:hover {
-      color: #7A2912;
-    }
+.nav-direita {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 18px;
+}
 
-    .nav-direita {
-      margin-left: auto;
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
+.carrinho{
+  height: 25px;
+  width: 25px;
+}
 
-    /* BARRA DE PESQUISA */
+.dashboard {
+  height: 25px;
+  width: 25px;
+}
 
-    .barra-pesquisa {
-      display: flex;
-      align-items: center;
-      background: #FFE7D7;
-      border-radius: 6px;
-      overflow: hidden;
-      border: 1px solid #C4956A;
-    }
-
-    .lupa{
-      height: 13px;
-      width: 13px;
-      color: #3B1A0D;
-    }
-
-    .carrinho{
-      height: 15px;
-      width: 15px;
-      color: #3B1A0D;
-    }
-
-    .barra-pesquisa input {
-      border: none;
-      outline: none;
-      padding: 5px 10px;
-      font-size: 0.82rem;
-      font-family: 'Lato', sans-serif;
-      width: 130px;
-      color: #3B1A0D;
-    }
-
-    .barra-pesquisa input::placeholder {
-      color: #A0786A;
-    }
-
-    .barra-pesquisa button {
-      background: none;
-      border: none;
-      padding: 5px 8px;
-      cursor: pointer;
-      color: #7A5040;
-      font-size: 0.9rem;
-    }
+.perfil-vendedor {
+  height: 25px;
+  width: 25px;
+}
 
 /* NAV LATERAL */
 .layout {

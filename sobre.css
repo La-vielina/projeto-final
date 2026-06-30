@@ -5,98 +5,64 @@
   padding: 0;
 }
 
-/* ── BASE ── */
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "inika";
+  src: url("inika.regular.ttf") format("truetype");
+
   background-color: #E8D5C0;
-  color: #3B1A0D;
+  color: #62241b;
   min-height: 100vh;
 }
 
-/* ── NAVBAR ── */
+/* NAVBAR */
 nav {
   background-color: #D6B49A;
-  padding: 10px 40px;
   display: flex;
-  align-items: center;
-  gap: 36px;
-  box-shadow: 0 2px 8px rgba(60, 20, 0, 0.12);
+  align-items: center; 
+  padding: 15px 40px;
+  box-shadow: 0 2px 8px rgba(60,20,0,.15);
 }
 
-.nav-logo {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2rem;
-  color: #3B1A0D;
-  text-decoration: none;
-  margin-right: 16px;
-  white-space: nowrap;
+.logo {
+  width: 180px;
+  height: 70px;
 }
 
-.nav-links {
+.nav-abas {
   display: flex;
-  gap: 28px;
   list-style: none;
+  gap: 35px;
+  margin: 0 auto;
 }
 
-.nav-links a {
-  font-size: 0.88rem;
-  color: #3B1A0D;
+.nav-abas a {
   text-decoration: none;
-  font-weight: 400;
-  transition: color 0.2s;
+  color: #3B1A0D;
+  font-size: 15px;
 }
 
-.nav-links a:hover { color: #7A2912; }
-
-.nav-links a.active {
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-.nav-right {
+.nav-direita {
+  display: flex;
+  align-items: center;
   margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 14px;
+  gap: 18px;
 }
 
-.search-wrapper {
-  display: flex;
-  align-items: center;
-  background: #fff;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid #C4956A;
+.carrinho{
+  height: 25px;
+  width: 25px;
 }
 
-.search-wrapper input {
-  border: none;
-  outline: none;
-  padding: 5px 10px;
-  font-size: 0.82rem;
-  font-family: 'Lato', sans-serif;
-  width: 130px;
-  color: #3B1A0D;
+.dashboard {
+  height: 25px;
+  width: 25px;
 }
 
-.search-wrapper input::placeholder { color: #A0786A; }
-
-.search-wrapper button {
-  background: none;
-  border: none;
-  padding: 5px 8px;
-  cursor: pointer;
-  color: #7A5040;
-  font-size: 0.9rem;
+.perfil-vendedor {
+  height: 25px;
+  width: 25px;
 }
 
-.nav-icon {
-  font-size: 1.2rem;
-  color: #5C3020;
-  cursor: pointer;
-  text-decoration: none;
-}
 
 /* ── PAGE ── */
 .page {

@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-/* BASE */
 body {
   font-family: "inika";
   src: url("inika.regular.ttf") format("truetype");
@@ -18,88 +17,49 @@ body {
 nav {
   background-color: #D6B49A;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center; 
   padding: 15px 40px;
   box-shadow: 0 2px 8px rgba(60,20,0,.15);
 }
 
 .logo {
-  width: 220px;
-  height: auto;
+  width: 180px;
+  height: 70px;
 }
 
 .nav-abas {
   display: flex;
   list-style: none;
   gap: 35px;
+  margin: 0 auto;
 }
 
 .nav-abas a {
   text-decoration: none;
   color: #3B1A0D;
-  font-size: 16px;
-}
-
-.nav-abas a:hover {
-  color: #7A2912;
+  font-size: 15px;
 }
 
 .nav-direita {
   display: flex;
   align-items: center;
-  gap: 20px;
-}
-
-.barra-pesquisa {
-  display: flex;
-  align-items: center;
-  background: #FFE7D7;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid #C4956A;
-}
-
-.lupa{
-  height: 13px;
-  width: 13px;
-  color: #62241b;
+  margin-left: auto;
+  gap: 18px;
 }
 
 .carrinho{
-  height: 15px;
-  width: 15px;
-  color: #62241b;
+  height: 25px;
+  width: 25px;
 }
 
-.barra-pesquisa input {
-  border: none;
-  outline: none;
-  padding: 5px 10px;
-  font-size: 0.82rem;
-  font-family: 'Lato', sans-serif;
-  width: 130px;
-  color: #62241b;
+.dashboard {
+  height: 25px;
+  width: 25px;
 }
 
-.barra-pesquisa input::placeholder {
-  color: #A0786A;
-}
-
-.barra-pesquisa button {
-  background: none;
-  border: none;
-  padding: 5px 8px;
-  cursor: pointer;
-  color: #7A5040;
-  font-size: 0.9rem;
-}
-
-.nav-icone {
-  font-size: 1.2rem;
-  color: #5C3020;
-  cursor: pointer;
-  text-decoration: none;
+.perfil-vendedor {
+  height: 25px;
+  width: 25px;
 }
 
 .main {
