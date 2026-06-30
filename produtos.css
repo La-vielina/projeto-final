@@ -28,19 +28,6 @@ nav {
   height: 70px;
 }
 
-.nav-abas {
-  display: flex;
-  list-style: none;
-  gap: 35px;
-  margin: 0 auto;
-}
-
-.nav-abas a {
-  text-decoration: none;
-  color: #3B1A0D;
-  font-size: 15px;
-}
-
 .nav-direita {
   display: flex;
   align-items: center;
