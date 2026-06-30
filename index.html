@@ -3,23 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Principal</title>
+  <title>Dashboard</title> 
+
   <link rel="stylesheet" href="index.css">
- 
 </head>
 <body>
-  
- <nav>
+
+<nav>
     <img src="imagens-visual/logo2.png" alt="entrelinhas" class="logo">
 
-    <ul class="nav-abas">
-      <li><a href="index.html">Início</a></li>
-      <li><a href="sobre.html">Sobre Nós</a></li>
-    </ul>
-
     <div class="nav-direita">
-
-       <a class="nav-icone" href="dashboard.html">
+       <a class="nav-icone" href="index.html">
         <img src="imagens-icons/grafico1.png" alt="dashboard" class="dashboard">
       </a>
 
@@ -30,104 +24,206 @@
     </div>
   </nav>
 
-  <div class="hero">
-    <h2>Boas histórias<br>te esperam aqui.</h2>
-    <p>Descubra novos mundos, vilões e<br>heróis.</p>
-  </div>
 
-  <div class="section" style="margin-top: 24px;">
-    <div class="generos-grid">
+  <div class="layout">
 
-      <a class="genero-livros" href="romance.html">
-        <div class="romance">
-          <img src="imagens-visual/romance.png">
-        </div>
-        <span class="genero-nome">romance</span>
-      </a>
+    <aside class="lateral">
+      <ul class="nav-lateral">
+        <li><a href="#" class="active"><img src="imagens-icons/casa.png" alt="dashboard">Dashboard</a></li>
+        <li><a href="livros.html">Livros</a></li>
+        <li><a href="sobre.html">Desenvolvedores</a></li>
 
-      <a class="genero-livros" href="estudos.html">
-        <div class="estudos">
-          <img src="imagens-visual/estudos.png">
-        </div>
-        <span class="genero-nome">estudos</span>
-      </a>
+        <li><a href="#" class="active"><img src="imagens-icons/livro-icon.png" alt="abas">Gêneros Literários</a></li>
 
-      <a class="genero-livros" href="teologico.html">
-        <div class="teologico">
-          <img src="imagens-visual/teologico.png">
-        </div>
-        <span class="genero-nome">teológico</span>
-      </a>
+        <li><a href="romance.html">Romance</a></li>
+        <li><a href="estudos.html">Estudos</a></li>
+        <li><a href="teologico.html">Teológico</a></li>
+        <li><a href="fantasia.html">Fantasia</a></li>
+        <li><a href="suspense.html">Suspense</a></li>
+      </ul>
+      <a href="login.html" class="botao-sair">Sair</a>
+    </aside>
 
-      <a class="genero-livros" href="fantasia.html">
-        <div class="fantasia">
-          <img src="imagens-visual/fantasia.png">
-        </div>
-        <span class="genero-nome">fantasia</span>
-      </a>
+  <!--INFORMAÇÕES DE CIMA-->
 
-      <a class="genero-livros" href="suspense.html">
-        <div class="suspense">
-          <img src="imagens-visual/suspense.png">
-        </div>
-        <span class="genero-nome">suspense</span>
-      </a>
+    <main class="principal">
+  <div class="indicadores">
 
-      <a class="genero-livros" href="terror.html">
-        <div class="terror">
-          <img src="imagens-visual/terror.png">
-        </div>
-        <span class="genero-nome">terror</span>
-      </a>     
+    <div class="indicadores-card">
+      <span class="indicadores-icon">
+        <img src="imagens-icons/livro-icon.png" alt="livros">
+      </span>
+
+      <div class="indicadores-infos">
+        <span class="indicadores-titulo">Total de livros</span>
+        <span class="indicadores-valor">36</span>
+      </div>
     </div>
+
+    <div class="indicadores-card">
+      <span class="indicadores-icon">
+        <img src="imagens-icons/clientes.png" alt="clientes">
+      </span>
+
+      <div class="indicadores-infos">
+        <span class="indicadores-titulo">Total de clientes</span>
+        <span class="indicadores-valor">0</span>
+      </div>
+    </div>
+
+     <div class="indicadores-card">
+      <span class="indicadores-icon">
+        <img src="imagens-icons/moeda.png" alt="faturamento">
+      </span>
+
+      <div class="indicadores-infos">
+        <span class="indicadores-titulo">Faturamento do mês</span>
+        <span class="indicadores-valor">36</span>
+      </div>
+    </div>
+
   </div>
- 
-  <div class="catalogo" style="margin-top: 28px; padding-bottom: 40px;">
-    <h3 class="section-title">Lançamentos</h3>
-    <div class="livros-grid">
 
-      <a class="livros" href="#">
-        <div class="capa livro-morro">
-          <img src="imagens-livros/morro-ventos.jpeg" class="morro-ventos">
-         </div>
-        <span class="titulo">O Morro dos Ventos Uivantes</span>
-        <span class="preco">R$ 44,00</span>
-      </a> 
 
-      <a class="livros" href="#">
-        <div class="capa livro-it">
-          <img src="imagens-livros/it.jpeg" class="it">
+  <!-- LINHA DO MEIO -->
+  <div class="central">
+
+    <!-- ESTOQUE -->
+    <div class="painel">
+
+      <div class="painel-titulo">
+        <img src="imagens-icons/produtos.png">
+        Resumo de estoque
+      </div>
+
+      <div class="estoque-status">
+
+        <div class="estoque-item">
+          <span class="estoque-icon">
+            <img src="imagens-icons/livro-icon.png">
+          </span>
+
+          <span class="estoque-disponibilidade">Em estoque</span>
+          <span class="estoque-valor">36</span>
         </div>
-        <span class="titulo">It: A Coisa</span>
-        <span class="preco">R$ 69,00</span>
-      </a>
 
-      <a class="livros" href="#">
-        <div class="capa livro-verity">
-          <img src="imagens-livros/verity.jpeg" class="verity">
-        </div>
-        <span class="titulo">Verity</span>
-        <span class="preco">R$ 54,00</span>
-      </a>
+        <div class="estoque-item">
+          <span class="estoque-icon">
+            <img src="imagens-icons/aviso.png">
+          </span>
 
-      <a class="livros" href="#">
-        <div class="capa livro-potter">
-          <img src="imagens-livros/harry-potter.jpg" class="harry-potter">
+          <span class="estoque-disponibilidade">Estoque baixo</span>
+          <span class="estoque-valor">0</span>
         </div>
-        <span class="titulo">Harry Potter e a Pedra Filosofal</span>
-        <span class="preco">R$ 59,00  </span>
-      </a>
 
-      <a class="livros" href="#">
-        <div class="capa livro-dom">
-          <img src="imagens-livros/dom-casmurro.jpeg" class="dom-casmurro">
+        <div class="estoque-item">
+          <span class="estoque-icon">
+            <img src="imagens-icons/proibido.png">
+          </span>
+
+          <span class="estoque-disponibilidade">Esgotados</span>
+          <span class="estoque-valor">0</span>
         </div>
-        <span class="titulo">Dom Casmurro</span>
-        <span class="preco">R$ 29,00</span>
-      </a>
+
+      </div>
 
     </div>
+
+
+    <!-- PEDIDOS -->
+    <div class="painel">
+
+      <div class="header-pedidos">
+
+        <div class="painel-titulo" style="margin-bottom:0;">
+          <img src="imagens-icons/carrinho.png">
+          Pedidos recentes
+        </div>
+
+        <button class="ver-botao">Ver todos</button>
+
+      </div>
+
+      <div class="tabela-pedidos-header">
+        <span>Pedido</span>
+        <span>Cliente</span>
+        <span>Data</span>
+        <span>Status</span>
+        <span>Total</span>
+      </div>
+
+      <div class="pedidos">
+        Nenhum pedido ainda.
+      </div>
+
+    </div>
+
   </div>
+
+
+  <!-- GRÁFICO -->
+  <div class="painel">
+
+    <div class="grafico-header">
+
+      <div class="painel-titulo">
+        <img src="imagens-icons/grafico1.png">
+        Vendas dos últimos meses
+      </div>
+
+      <a href="#" class="grafico-link">ver ano →</a>
+
+    </div>
+
+    <div>
+
+      <div class="grafico-area">
+
+        <div class="grafico-legendas">
+        <span>0</span>
+        <span>20</span>
+        <span>40</span>
+        <span>60</span>
+        <span>80</span>
+        </div>
+
+        <div class="grupo-barra">
+          <div class="grafico-barra"></div>
+          <span class="data-barra">Jan</span>
+        </div>
+
+        <div class="grupo-barra">
+          <div class="grafico-barra"></div>
+          <span class="data-barra">Fev</span>
+        </div>
+
+        <div class="grupo-barra">
+          <div class="grafico-barra"></div>
+          <span class="data-barra">Mar</span>
+        </div>
+
+        <div class="grupo-barra">
+          <div class="grafico-barra"></div>
+          <span class="data-barra">Abr</span>
+        </div>
+
+        <div class="grupo-barra">
+          <div class="grafico-barra"></div>
+          <span class="data-barra">Mai</span>
+        </div>
+
+        <div class="grupo-barra">
+          <div class="grafico-barra"></div>
+          <span class="data-barra">Jun</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
 
 </body>
 </html>

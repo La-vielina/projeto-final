@@ -1,10 +1,11 @@
- *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+/* ── RESET ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    body {
+ body {
       font-family: "inika";
       src: url("inika.regular.ttf") format("typetrue");
 
@@ -27,29 +28,11 @@ nav {
   height: 70px;
 }
 
-.nav-abas {
-  display: flex;
-  list-style: none;
-  gap: 35px;
-  margin: 0 auto;
-}
-
-.nav-abas a {
-  text-decoration: none;
-  color: #3B1A0D;
-  font-size: 15px;
-}
-
 .nav-direita {
   display: flex;
   align-items: center;
   margin-left: auto;
   gap: 18px;
-}
-
-.carrinho{
-  height: 25px;
-  width: 25px;
 }
 
 .dashboard {
@@ -62,155 +45,323 @@ nav {
   width: 25px;
 }
 
-    /* LETREIRO */
+/* NAV LATERAL */
+.layout {
+  display: flex;
+  flex: 1;
+}
 
-    .hero {
-      margin: 20px 40px 0;
+.lateral {
+  background-image: url("imagens-visual/fundo2.png");
+  background-size: cover;
+  background-position: center;
 
-      background-image: url("imagens-visual/fundo2.png");
-      background-size: cover;
-      background-position: center;
+  border-radius: 0px 20px 20px 0px;
 
-      border-radius: 16px;
-      padding: 32px 36px 28px;
-      min-height: 130px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 16px;
+  flex-shrink: 0;
 
-    .hero h2 {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #FFFFFF;
-      line-height: 1.25;
-      max-width: 260px;
-      text-shadow: 0 1px 4px rgba(60,20,0,0.3);
-    }
+}
+ 
+.nav-lateral {
+  list-style: none;
+  flex: 1;
+}
+ 
+.nav-lateral li a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 0.82rem;
+  color: #FFE7D7;
+  text-decoration: none;
+  transition: background-color 0.15s;
+  margin-top: 3px;
+}
+ 
+.nav-lateral li a:hover {
+  background-color: rgba(60,20,0,0.08);
+}
+ 
+.nav-lateral li a.active {
+  background-color: #D6B49A;
+  color: #3b1a0d;
+  border-radius: 0 20px 20px 0;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 
-    .hero p {
-      font-size: 0.72rem;
-      color: rgba(255,255,255,0.85);
-      margin-top: 8px;
-      max-width: 220px;
-      line-height: 1.5;
-    }
+.nav-lateral li:nth-child(4) {
+  margin-top: 50px;
+}
+ 
+.botao-sair {
+  margin: 12px 20px 0;
+  padding: 7px 0;
+  background-color: #3b1a0d;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  font-size: 0.78rem;
+  font-family: 'Lato', sans-serif;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s;
+}
 
-    /* ABAS */
+.active img {
+  height: 12px;
+  width: 12px;
+}
 
-    .section {
-      padding: 24px 40px 0;
-    }
+/* INFORMAÇÕES DE CIMA */ 
+.principal {
+  flex: 1;
+  padding: 16px 18px 0;
+  overflow: auto;
+}
 
-    .generos-grid {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
+.indicadores {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
 
-    .genero-livros {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      text-decoration: none;
-      cursor: pointer;
-    }
+.indicadores-card {
+  background-color: #D6B49A;
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 260px;
+}
 
-    .genero-card {
-      width: 88px;
-      height: 88px;
-      border-radius: 14px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      padding: 10px;
-    }
+.indicadores-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
 
-    .genero-card .genero-icon {
-      font-size: 1.5rem;
-      line-height: 1;
-    }
+.indicadores-infos {
+  display: flex;
+  flex-direction: column;
+}
 
-    .genero-card .genero-title {
-      font-size: 0.6rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      text-align: center;
-      line-height: 1.1;
-    }
+.indicadores-titulo {
+  font-size: 0.65rem;
+  color: #6a4334;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
 
-    .genero-nome {
-      font-size: 0.95rem;
-      color: #5C3020;
-      font-weight: 400;
-      background-color: #FFE7D7;
-      border-radius: 8px;
-      padding: 5px;
-    }
+.indicadores-valor {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #3B1A0D;
+  line-height: 1.1;
+}
 
-    .genero-livros img{
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-    }
+.indicadores img {
+  height: 20px;
+  width: 20px;
+}
 
-    /* CATALOGO */
+/* INFORMAÇÕES CENTRAIS */
+.central {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
 
-    .section-title {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #62241b;
-      margin-bottom: 16px;
-      margin-left: 40px;
-    }
+.painel {
+  background-color: #D6B49A;
+  border-radius: 10px;
+  padding: 14px 16px;
+  width: 100%;
+}
 
-    .livros-grid {
-      display: flex;
-      gap: 120px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+.painel-titulo {
+  font-size: 1,1rem;
+  font-weight: 700;
+  color: #3B1A0D;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 
-    .livros {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-      width: 100px;
-      text-decoration: none;
-      cursor: pointer;
-    }
+.painel-titulo img {
+  height: 25px;
+  width: 25px;
+}
 
-    .capa {
-      overflow: hidden;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
-      text-align: center;
-     
-    }
+.estoque-status {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+}
 
-    .capa img {
-      width: 150px;
-      height: 230px;
-    }
+.estoque-item {
+  background-color: #c7a387;
+  border-radius: 8px;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
 
-    .titulo {
-      font-size: 0.90rem;
-      color: #62241b;
-      text-align: center;
-      line-height: 1.3;
-      font-weight: 400;
-    }
+.estoque-icon { font-size: 1.1rem; }
 
+.estoque-icon img {
+  height: 50px;
+  width: 50px;
+}
 
-    .preco {
-      font-size: 0.90rem;
-      color: #62241b;
-      font-weight: 700;
-    }
+.estoque-disponibilidade {
+  font-size: 0.6rem;
+  color: #6a4334;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.estoque-valor {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #3B1A0D;
+}
+
+.estoque-alerta {
+  background-color: #c7a387;
+  border-radius: 6px;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* GRÁFICO */
+.grafico-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.grafico-link {
+  font-size: 0.62rem;
+  color: #6a4334;
+  text-decoration: none;
+}
+
+.grafico-areas {
+  height: 110px;
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+  padding: 0 4px;
+  border-left: 1px solid rgba(92,48,32,0.2);
+  border-bottom: 1px solid rgba(92,48,32,0.2);
+  position: relative;
+}
+
+.grafico-legendas {
+  position: absolute;
+  left: -28px;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  font-size: 0.55rem;
+  color: #9A7060;
+}
+
+.grafico-grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+}
+
+.grafico-barra {
+  width: 100%;
+  background-color: #c7a387;
+  border-radius: 2px 2px 0 0;
+  min-height: 2px;
+}
+
+.data-barra {
+  font-size: 0.7rem;
+  color: #3B1A0D;
+  
+}
+
+/* INFORMAÇÕES DE BAIXO */
+.rodape {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.painel-botao {
+  display: block;
+  width: 100%;
+  padding: 6px 0;
+  background-color: #c7a387;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #3b1a0d;
+  cursor: pointer;
+}
+
+.panel-botao:hover { background-color: #A07848; color: #fff; }
+
+.header-pedidos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ver-botao {
+  font-size: 0.62rem;
+  color: #fff;
+  background-color: #6a4334;
+  border: none;
+  border-radius: 10px;
+  padding: 3px 10px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+}
+
+.tabela-pedidos-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  font-size: 0.8rem;
+  color: #9A7060;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(92,48,32,0.15);
+  margin-bottom: 4px;
+}
+
+.pedidos {
+  font-size: 0.9rem;
+  color: #B0906A;
+  text-align: center;
+  padding: 16px 0;
+}
+
